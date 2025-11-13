@@ -1,171 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>The Federalist Scholar – Home</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Federalist Scholar – Commentary & Culture</title>
+
+<style>
     body {
-      margin: 0;
-      font-family: Georgia, "Times New Roman", serif;
-      background: #f7f7f7;
-      color: #111827;
+        margin: 0;
+        font-family: 'Georgia', serif;
+        background: #f7f7f7;
+        color: #222;
     }
 
+    /* NAVBAR */
     nav {
-      background: #0f172a;
-      padding: 18px 40px;
-      color: white;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+        background: #0f172a;
+        padding: 18px 40px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     nav .title {
-      font-size: 1.4rem;
-      font-weight: bold;
-      letter-spacing: 1px;
+        font-size: 1.4rem;
+        font-weight: bold;
+        letter-spacing: 1px;
     }
 
     nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      gap: 24px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        gap: 24px;
     }
 
     nav ul li {
-      display: inline;
+        display: inline;
     }
 
     nav ul li a {
-      color: #dbeafe;
-      text-decoration: none;
-      font-size: 1rem;
+        color: #dbeafe;
+        text-decoration: none;
+        font-size: 1rem;
     }
 
     nav ul li a:hover {
-      color: #ffffff;
+        color: white;
     }
 
+    /* HERO HEADER */
     .hero {
-      padding: 60px 20px;
-      text-align: center;
-      background: linear-gradient(135deg, #0f172a, #1f2937);
-      color: white;
+        background: url('https://images.unsplash.com/photo-1526318472351-c75fcf070305?auto=format&fit=crop&w=1350&q=80');
+        background-size: cover;
+        background-position: center;
+        padding: 90px 40px;
+        color: white;
+        text-shadow: 0px 2px 8px rgba(0,0,0,0.6);
     }
 
     .hero h1 {
-      margin: 0 0 10px;
-      font-size: 2.4rem;
+        font-size: 2.8rem;
+        max-width: 800px;
+        margin: 0;
     }
 
     .hero p {
-      margin: 0;
-      font-size: 1.1rem;
-      max-width: 700px;
-      margin-inline: auto;
+        max-width: 700px;
+        margin-top: 15px;
+        font-size: 1.25rem;
     }
 
+    /* BLOG CONTAINER */
     .container {
-      max-width: 900px;
-      margin: 30px auto;
-      padding: 0 20px 40px;
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 0 20px;
     }
 
     .post {
-      background: white;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 8px;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        background: white;
+        padding: 25px;
+        margin-bottom: 35px;
+        border-radius: 8px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        transition: transform 0.2s ease;
+    }
+
+    .post:hover {
+        transform: translateY(-3px);
     }
 
     .post h2 {
-      margin-top: 0;
-      font-size: 1.6rem;
+        margin-top: 0;
+        font-size: 1.8rem;
     }
 
     .post h2 a {
-      color: #111827;
-      text-decoration: none;
+        color: #111827;
+        text-decoration: none;
     }
 
     .post h2 a:hover {
-      text-decoration: underline;
+        text-decoration: underline;
     }
 
-    .meta {
-      color: #6b7280;
-      font-size: 0.9rem;
-      margin-bottom: 10px;
+    .post .meta {
+        color: #666;
+        font-size: 0.9rem;
+        margin-bottom: 12px;
     }
 
     .post p {
-      margin: 0 0 10px;
-      line-height: 1.6;
+        font-size: 1.05rem;
+        line-height: 1.6;
     }
 
     .read-more {
-      font-size: 0.95rem;
-      color: #1d4ed8;
-      text-decoration: none;
+        display: inline-block;
+        margin-top: 10px;
+        font-size: 0.95rem;
+        color: #1d4ed8;
+        text-decoration: none;
     }
 
     .read-more:hover {
-      text-decoration: underline;
+        text-decoration: underline;
     }
 
     footer {
-      text-align: center;
-      padding: 20px;
-      background: #e2e8f0;
-      color: #4b5563;
-      font-size: 0.9rem;
+        text-align: center;
+        padding: 40px;
+        margin-top: 40px;
+        color: #555;
+        background: #e2e8f0;
     }
-  </style>
+</style>
 </head>
+
 <body>
-  <nav>
+
+<!-- NAV BAR -->
+<nav>
     <div class="title">The Federalist Scholar</div>
     <ul>
-      <li><a href="./">Home</a></li>
-      <li><a href="politics.html">Politics</a></li>
-      <li><a href="religion.html">Religion</a></li>
-      <li><a href="culture.html">Culture</a></li>
+        <li><a href="./">Home</a></li>
+        <li><a href="politics.html">Politics</a></li>
+        <li><a href="religion.html">Religion</a></li>
+        <li><a href="culture.html">Culture</a></li>
     </ul>
-  </nav>
+</nav>
 
-  <div class="hero">
-    <h1>Conservative Politics, Law, and the Christian Tradition</h1>
-    <p>Essays from a law student exploring the intersection of public life and faith.</p>
-  </div>
+<!-- HERO HEADER -->
+<div class="hero">
+    <h1>Thoughtful Commentary on Conservative Politics, Law, and the Christian Tradition</h1>
+    <p>Essays from a law student exploring the intersection of philosophy, faith, and public life.</p>
+</div>
 
-  <div class="container">
-    <div class="post">
-      <h2><a href="post-thomas-more.html">Why Thomas More Still Matters in an Age of Moral Flexibility</a></h2>
-      <div class="meta">February 2025 · Religion & Law</div>
-      <p>
-        As a law student on the road to Catholicism, I find myself returning again and again
-        to the figure of St. Thomas More and his refusal to bend conscience to power…
-      </p>
-      <a class="read-more" href="post-thomas-more.html">Read more →</a>
-    </div>
+<!-- BLOG POSTS CONTAINER -->
+<div class="container" id="blog-container"></div>
 
-    <div class="post">
-      <h2><a href="post-ordered-liberty.html">The Conservative Case for Ordered Liberty</a></h2>
-      <div class="meta">January 2025 · Politics</div>
-      <p>
-        Among young conservatives, there is a tension between libertarian impulses and a hunger
-        for moral order. Ordered liberty offers a way to hold both in balance…
-      </p>
-      <a class="read-more" href="post-ordered-liberty.html">Read more →</a>
-    </div>
-  </div>
+<!-- FOOTER -->
+<footer>
+    © 2025 The Federalist Scholar · A GitHub Pages Publication
+</footer>
 
-  <footer>
-    © 2025 The Federalist Scholar · Hosted on GitHub Pages
-  </footer>
+<script>
+// Posts with links to separate pages
+const posts = [
+    {
+        title: "Why Thomas More Still Matters in an Age of Moral Flexibility",
+        date: "February 2025",
+        category: "Religion & Law",
+        slug: "post-thomas-more.html",
+        excerpt: `
+            As a first-year law student who is in the process of converting to Catholicism, 
+            I find myself returning again and again to the figure of St. Thomas More...`
+    },
+    {
+        title: "The Conservative Case for Ordered Liberty",
+        date: "January 2025",
+        category: "Politics",
+        slug: "post-ordered-liberty.html",
+        excerpt: `
+            Among young conservatives, I often hear a tension between libertarian impulses 
+            and a longing for moral order. As someone studying constitutional law, I sympathize 
+            with both instincts...`
+    }
+];
+
+const container = document.getElementById("blog-container");
+
+posts.forEach(post => {
+    const div = document.createElement("div");
+    div.classList.add("post");
+
+    div.innerHTML = `
+        <h2><a href="${post.slug}">${post.title}</a></h2>
+        <div class="meta">${post.date} · ${post.category}</div>
+        <p>${post.excerpt}</p>
+        <a class="read-more" href="${post.slug}">Read more →</a>
+    `;
+
+    container.appendChild(div);
+});
+</script>
+
 </body>
 </html>
