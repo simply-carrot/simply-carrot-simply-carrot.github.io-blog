@@ -23,10 +23,12 @@
         align-items: center;
     }
 
-    nav .title {
+    nav .title a {
         font-size: 1.4rem;
         font-weight: bold;
         letter-spacing: 1px;
+        color: white;
+        text-decoration: none;
     }
 
     nav ul {
@@ -51,32 +53,31 @@
         color: white;
     }
 
-    /* HERO HEADER */
-    .hero {
-        background: url('https://images.unsplash.com/photo-1526318472351-c75fcf070305?auto=format&fit=crop&w=1350&q=80');
-        background-size: cover;
-        background-position: center;
-        padding: 90px 40px;
-        color: white;
-        text-shadow: 0px 2px 8px rgba(0,0,0,0.6);
+    /* SIMPLE INTRO HEADER (no image) */
+    .intro {
+        padding: 40px 40px 10px;
+        background: #0b1220;
+        color: #e5e7eb;
+        border-bottom: 1px solid #1f2937;
     }
 
-    .hero h1 {
-        font-size: 2.8rem;
+    .intro h1 {
+        font-size: 2.2rem;
         max-width: 800px;
         margin: 0;
     }
 
-    .hero p {
+    .intro p {
         max-width: 700px;
-        margin-top: 15px;
-        font-size: 1.25rem;
+        margin-top: 10px;
+        font-size: 1.05rem;
+        color: #cbd5f5;
     }
 
     /* BLOG CONTAINER */
     .container {
         max-width: 900px;
-        margin: 40px auto;
+        margin: 30px auto 40px;
         padding: 0 20px;
     }
 
@@ -144,20 +145,21 @@
 
 <!-- NAV BAR -->
 <nav>
-    <div class="title">The Federalist Scholar</div>
+    <div class="title">
+        <a href="index.html">The Federalist Scholar</a>
+    </div>
     <ul>
-        <li><a href="./">Home</a></li>
         <li><a href="politics.html">Politics</a></li>
         <li><a href="religion.html">Religion</a></li>
         <li><a href="culture.html">Culture</a></li>
     </ul>
 </nav>
 
-<!-- HERO HEADER -->
-<div class="hero">
+<!-- SIMPLE INTRO (no big image) -->
+<section class="intro">
     <h1>Thoughtful Commentary on Conservative Politics, Law, and the Christian Tradition</h1>
     <p>Essays from a law student exploring the intersection of philosophy, faith, and public life.</p>
-</div>
+</section>
 
 <!-- BLOG POSTS CONTAINER -->
 <div class="container" id="blog-container"></div>
