@@ -1,27 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Culture – The Federalist Scholar</title>
+
 <style>
-    body { margin: 0; font-family: 'Georgia', serif; background: #f7f7f7; color: #222; }
-    nav { background: #0f172a; padding: 18px 40px; color: white; display: flex; justify-content: space-between; align-items: center; }
-    nav .title { font-size: 1.4rem; font-weight: bold; letter-spacing: 1px; }
-    nav ul { list-style: none; padding: 0; margin: 0; display: flex; gap: 24px; }
-    nav ul li { display: inline; }
-    nav ul li a { color: #dbeafe; text-decoration: none; font-size: 1rem; }
+    body { margin: 0; font-family: Georgia, serif; background: #f7f7f7; color: #222; }
+
+    /* NAVBAR */
+    nav {
+        background: #0f172a;
+        padding: 18px 40px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav .title a {
+        font-size: 1.45rem;
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+    }
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        gap: 24px;
+    }
+    nav ul li a {
+        color: #dbeafe;
+        text-decoration: none;
+    }
     nav ul li a:hover { color: white; }
-    .container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
-    h1 { font-size: 2.1rem; margin-bottom: 10px; }
-    footer { text-align: center; padding: 40px; margin-top: 40px; color: #555; background: #e2e8f0; }
+
+    /* CATEGORY CONTAINER */
+    .container {
+        max-width: 900px;
+        margin: 40px auto;
+        background: white;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
 </style>
 </head>
+
 <body>
+
 <nav>
-    <div class="title">The Federalist Scholar</div>
+    <div class="title"><a href="index.html">The Federalist Scholar</a></div>
     <ul>
-        <li><a href="index.html">Home</a></li>
         <li><a href="politics.html">Politics</a></li>
         <li><a href="religion.html">Religion</a></li>
         <li><a href="culture.html">Culture</a></li>
@@ -30,11 +61,12 @@
 
 <div class="container">
     <h1>Culture</h1>
-    <p>Coming soon: essays on art, media, and the formation of the moral imagination.</p>
+    <p>Reflections on art, media, education, and the shaping of the moral imagination.</p>
+
+    <p style="margin-top: 30px; color: #555;">
+        More essays coming soon.
+    </p>
 </div>
 
-<footer>
-    © 2025 The Federalist Scholar
-</footer>
 </body>
 </html>
