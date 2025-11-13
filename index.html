@@ -2,11 +2,170 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Test Home</title>
+  <title>The Federalist Scholar – Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background: #f7f7f7;
+      color: #111827;
+    }
+
+    nav {
+      background: #0f172a;
+      padding: 18px 40px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav .title {
+      font-size: 1.4rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 24px;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      color: #dbeafe;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    nav ul li a:hover {
+      color: #ffffff;
+    }
+
+    .hero {
+      padding: 60px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #0f172a, #1f2937);
+      color: white;
+    }
+
+    .hero h1 {
+      margin: 0 0 10px;
+      font-size: 2.4rem;
+    }
+
+    .hero p {
+      margin: 0;
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin-inline: auto;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px 40px;
+    }
+
+    .post {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    }
+
+    .post h2 {
+      margin-top: 0;
+      font-size: 1.6rem;
+    }
+
+    .post h2 a {
+      color: #111827;
+      text-decoration: none;
+    }
+
+    .post h2 a:hover {
+      text-decoration: underline;
+    }
+
+    .meta {
+      color: #6b7280;
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+    }
+
+    .post p {
+      margin: 0 0 10px;
+      line-height: 1.6;
+    }
+
+    .read-more {
+      font-size: 0.95rem;
+      color: #1d4ed8;
+      text-decoration: none;
+    }
+
+    .read-more:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #e2e8f0;
+      color: #4b5563;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
-  <h1>It works!</h1>
-  <p>If you can see this, GitHub Pages is fine, and the problem is in the old index code.</p>
+  <nav>
+    <div class="title">The Federalist Scholar</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="politics.html">Politics</a></li>
+      <li><a href="religion.html">Religion</a></li>
+      <li><a href="culture.html">Culture</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero">
+    <h1>Conservative Politics, Law, and the Christian Tradition</h1>
+    <p>Essays from a law student exploring the intersection of public life and faith.</p>
+  </div>
+
+  <div class="container">
+    <div class="post">
+      <h2><a href="post-thomas-more.html">Why Thomas More Still Matters in an Age of Moral Flexibility</a></h2>
+      <div class="meta">February 2025 · Religion & Law</div>
+      <p>
+        As a law student on the road to Catholicism, I find myself returning again and again
+        to the figure of St. Thomas More and his refusal to bend conscience to power…
+      </p>
+      <a class="read-more" href="post-thomas-more.html">Read more →</a>
+    </div>
+
+    <div class="post">
+      <h2><a href="post-ordered-liberty.html">The Conservative Case for Ordered Liberty</a></h2>
+      <div class="meta">January 2025 · Politics</div>
+      <p>
+        Among young conservatives, there is a tension between libertarian impulses and a hunger
+        for moral order. Ordered liberty offers a way to hold both in balance…
+      </p>
+      <a class="read-more" href="post-ordered-liberty.html">Read more →</a>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 The Federalist Scholar · Hosted on GitHub Pages
+  </footer>
 </body>
 </html>
-
