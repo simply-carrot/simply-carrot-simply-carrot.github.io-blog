@@ -1,31 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Why Thomas More Still Matters – The Federalist Scholar</title>
+
 <style>
-    body { margin: 0; font-family: 'Georgia', serif; background: #f7f7f7; color: #222; }
-    nav { background: #0f172a; padding: 18px 40px; color: white; display: flex; justify-content: space-between; align-items: center; }
-    nav .title { font-size: 1.4rem; font-weight: bold; letter-spacing: 1px; }
-    nav ul { list-style: none; padding: 0; margin: 0; display: flex; gap: 24px; }
-    nav ul li { display: inline; }
-    nav ul li a { color: #dbeafe; text-decoration: none; font-size: 1rem; }
+    body { margin: 0; font-family: Georgia, serif; background: #f7f7f7; color: #222; }
+
+    nav {
+        background: #0f172a;
+        padding: 18px 40px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav .title a { font-size: 1.45rem; font-weight: bold; color: white; text-decoration: none; }
+    nav ul { list-style: none; display: flex; gap: 24px; margin: 0; padding: 0; }
+    nav ul li a { color: #dbeafe; text-decoration: none; }
     nav ul li a:hover { color: white; }
-    .container { max-width: 900px; margin: 40px auto; padding: 0 20px; background: white; border-radius: 8px; box-shadow: 0 3px 10px rgba(0,0,0,0.1); }
-    h1 { font-size: 2.2rem; margin-top: 20px; }
-    .meta { color: #666; font-size: 0.9rem; margin-bottom: 16px; }
-    p { font-size: 1.05rem; line-height: 1.75; margin-bottom: 14px; }
-    a.back { display: inline-block; margin: 20px 0 10px; font-size: 0.95rem; color: #1d4ed8; text-decoration: none; }
-    a.back:hover { text-decoration: underline; }
-    footer { text-align: center; padding: 40px; margin-top: 40px; color: #555; background: #e2e8f0; }
+
+    .container {
+        max-width: 900px;
+        margin: 40px auto;
+        background: white;
+        padding: 30px 30px 120px; /* extra whitespace */
+        border-radius: 8px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    h1 { font-size: 2.2rem; margin-top: 10px; }
+    .meta { color: #666; font-size: 0.9rem; margin-bottom: 20px; }
+
+    p { font-size: 1.15rem; line-height: 1.75; margin-bottom: 16px; }
+
+    /* Drop cap */
+    .article p:first-of-type::first-letter {
+        float: left;
+        font-size: 3.3rem;
+        line-height: 0.90;
+        padding-top: 6px;
+        padding-right: 10px;
+        color: #0f172a;
+        font-weight: bold;
+    }
+
+    .back { color: #1d4ed8; text-decoration: none; font-size: 0.95rem; }
+    .back:hover { text-decoration: underline; }
 </style>
 </head>
+
 <body>
+
 <nav>
-    <div class="title">The Federalist Scholar</div>
+    <div class="title"><a href="index.html">The Federalist Scholar</a></div>
     <ul>
-        <li><a href="index.html">Home</a></li>
         <li><a href="politics.html">Politics</a></li>
         <li><a href="religion.html">Religion</a></li>
         <li><a href="culture.html">Culture</a></li>
@@ -34,45 +64,18 @@
 
 <div class="container">
     <a class="back" href="index.html">← Back to Home</a>
+
     <h1>Why Thomas More Still Matters in an Age of Moral Flexibility</h1>
     <div class="meta">February 2025 · Religion & Law</div>
 
-    <p>
-        As a first-year law student who is in the process of converting to Catholicism, 
-        I find myself returning again and again to the figure of St. Thomas More. 
-        The more I read about him—not just in <em>A Man for All Seasons</em>, but in his own letters—the more
-        his life exposes the thinness of so much modern talk about “following one’s conscience.”
-    </p>
-    <p>
-        More did not treat conscience as a free-floating feeling, but as a judgment rooted in 
-        objective moral truth and the teaching of the Church. That is precisely why his stand 
-        against Henry VIII was so costly. If conscience is simply preference, it can always be 
-        negotiated or managed. If conscience is an encounter with truth, it becomes something you 
-        are willing to die for.
-    </p>
-    <p>
-        In law school, we are trained to separate our “professional” selves from our deepest 
-        convictions—often in the name of neutrality or pluralism. Yet More’s life suggests that 
-        the great danger is not that Christians will impose their faith on others, but that we will 
-        quietly bracket it off, treating it as irrelevant to questions of justice, authority, and 
-        the common good.
-    </p>
-    <p>
-        For someone like me, standing at the threshold of the Church, More’s martyrdom is 
-        both intimidating and strangely consoling. It reminds me that the Catholic faith is not 
-        a lifestyle accessory I can bolt onto an existing career plan. It is a claim about what is 
-        ultimately real—and about the kind of person I am called to become, even if that eventually 
-        puts me at odds with the powerful.
-    </p>
-    <p>
-        In an age that prizes moral flexibility, Thomas More still matters because he shows us what 
-        fidelity looks like when every worldly incentive points the other way. The law needs that 
-        kind of courage again. So do I.
-    </p>
+    <div class="article">
+        <p>As a first-year law student who is in the process of converting to Catholicism, I find myself returning again and again to the figure of St. Thomas More...</p>
+        <p>More did not treat conscience as a free-floating feeling...</p>
+        <p>In law school, we are trained to separate our “professional selves”...</p>
+        <p>For someone like me, standing at the threshold of the Church...</p>
+        <p>In an age that prizes moral flexibility...</p>
+    </div>
 </div>
 
-<footer>
-    © 2025 The Federalist Scholar
-</footer>
 </body>
 </html>
